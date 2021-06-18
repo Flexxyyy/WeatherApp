@@ -17,7 +17,7 @@ window.addEventListener("load",()=>{
     let realFeel=document.getElementById('real_feel');
     let humidCont=document.getElementById('humidity');
     let pressureCont=document.getElementById('pressure');
-        const api=`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key}`;
+        const api=`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key}`;
         fetch(api)
         .then(res=>{return res.json();})
         .then(data=>{
