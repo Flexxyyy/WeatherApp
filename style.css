@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom, #33ccff 0%, #ff33cc 100%);
+  font-family: "Rubik", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  color: black;
+  height: 10vh;
+  width: 100vw;
+}
+
+#img {
+  padding: 10px;
+  height: 60px;
+  width: 60px;
+}
+
+#h4 {
+  font-size: 1.2rem;
+}
+
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 85vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  display: flex;
+  /* border: 1px solid #fff; */
+  border-radius: 15px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  font-size: 2rem;
+  height: 60vh;
+  width: 60vw;
+}
+
+.left {
+  display: grid;
+  place-items: center;
+  width: 35%;
+  height: 100%;
+}
+
+.left > img {
+  height: 200px;
+  width: 200px;
+  padding: 20px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 75%;
+  padding: 20px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#h3 {
+  font-size: 1.8rem;
+}
+
+.temp {
+  padding: 10px;
+  display: grid;
+  place-items: center;
+  color: white;
+}
+
+.temp > h1 {
+  font-size: 2.4rem;
+}
+
+.temp > h4 {
+  font-size: 1.4rem;
+}
+
+.real_feel {
+  padding: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.info {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 100px;
+}
+
+.humidity {
+  width: 40%;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+.pressure {
+  width: 40%;
+}
+
+.footer {
+  height: 5vh;
+  background-color: black;
+}
