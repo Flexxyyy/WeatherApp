@@ -26,7 +26,6 @@ window.addEventListener("load",()=>{
         feel=data.main.feels_like;
         humidity=data.main.humidity;
         pressure=data.main.pressure;
-        console.log(data)
         const keltocel=()=>{
             celcius=weather-273.15;
             return celcius;
