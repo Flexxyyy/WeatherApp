@@ -83,6 +83,7 @@ body {
 
 #h3 {
   font-size: 1.8rem;
+  text-align: center;
 }
 
 .temp {
@@ -132,4 +133,68 @@ h6 {
 .footer {
   height: 5vh;
   background-color: black;
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    font-size: 2rem;
+    height: 60vh;
+    width: 60vw;
+  }
+
+  .left {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    width: 60vw;
+    height: 100%;
+  }
+
+  .left > img {
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 60vw;
+    padding: 20px;
+  }
+
+  .info {
+    display: none;
+  }
+
+  /* .humidity > h5 {
+    font-size: 16px;
+  }
+
+  #humidity {
+    font-size: 16px;
+  }
+
+  .pressure > h5 {
+    font-size: 16px;
+  }
+
+  #pressure {
+    font-size: 16px;
+  } */
+
+  #h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #temp,
+  #weather_info {
+    font-size: 18px;
+  }
 }

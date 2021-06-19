@@ -1,5 +1,4 @@
 const key='4617a29012fdf810525e4554e73a3ef0';
-
 window.addEventListener("load",()=>{
     navigator.geolocation.getCurrentPosition((position)=> {
     let lat = position.coords.latitude;
@@ -17,7 +16,7 @@ window.addEventListener("load",()=>{
     let realFeel=document.getElementById('real_feel');
     let humidCont=document.getElementById('humidity');
     let pressureCont=document.getElementById('pressure');
-        const api=`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key}`;
+        const api=`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key}`;
         fetch(api)
         .then(res=>{return res.json();})
         .then(data=>{
@@ -27,7 +26,7 @@ window.addEventListener("load",()=>{
         feel=data.main.feels_like;
         humidity=data.main.humidity;
         pressure=data.main.pressure;
-        // console.log(data)
+        console.log(data)
         const keltocel=()=>{
             celcius=weather-273.15;
             return celcius;
